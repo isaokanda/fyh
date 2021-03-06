@@ -10,6 +10,7 @@ var version string
 
 func main() {
 
+	// version printing
 	if len(os.Args) > 1 {
 		if os.Args[1] == "--version" {
 			fmt.Println(filepath.Base(os.Args[0])+" "+version)
