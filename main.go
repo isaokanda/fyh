@@ -1,10 +1,20 @@
 package main
 
 import (
+	"os"
 	"fmt"
+	"path/filepath"
 )
 
+var version string
+
 func main() {
+
+	if len(os.Args) > 1 {
+		if os.Args[1] == "--version" {
+			fmt.Println(filepath.Base(os.Args[0])+" "+version)
+		}
+	}
 
 	fmt.Println("Bon jour")
 	fmt.Println("Ca va?")
