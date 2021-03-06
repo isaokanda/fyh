@@ -12,7 +12,7 @@ func main() {
 	fmt.Println("Au revoir.")
 
 	// loop test
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 5; i++ {
 		fmt.Printf("%d\n", i)
 	}
 
