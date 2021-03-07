@@ -23,8 +23,11 @@ func main() {
 	fmt.Println("Au revoir.")
 
 	// loop test
+	sum := 0
 	for i := 0; i < 5; i++ {
 		fmt.Printf("%d\n", i)
+		sum := i
 	}
+	fmt.Println(sum)
 
 }
